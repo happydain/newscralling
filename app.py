@@ -30,7 +30,7 @@ if st.button("뉴스 검색 및 요약 시작"):
             # Gemini 설정 (구글 검색 기능 포함)
             genai.configure(api_key=api_key)
             model = genai.GenerativeModel(
-                model_name='gemini-2.0-flash',
+                model_name='gmodel_name="gemini-2.0-flash-lite"',
                 tools=[{"google_search_retrieval": {}}]
             )
 
