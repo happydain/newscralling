@@ -30,9 +30,10 @@ if st.button("뉴스 검색 및 요약 시작"):
             # Gemini 설정 (구글 검색 기능 포함)
             genai.configure(api_key=api_key)
             model = genai.GenerativeModel(
-                model_name='gmodel_name="gemini-2.0-flash-lite"',
+                model_name="models/gemini-1.5-flash-8b",
                 tools=[{"google_search_retrieval": {}}]
             )
+            
 
             with st.spinner('AI가 실시간 뉴스를 검색하고 요약 중입니다...'):
                 prompt = f"'{keyword}'와 관련된 가장 최신 뉴스 기사 5개를 찾아줘. 각 기사의 제목, 원본 URL, 2줄 핵심 요약을 알려줘. 기사 사이에는 반드시 '---'를 넣어서 구분해줘."
