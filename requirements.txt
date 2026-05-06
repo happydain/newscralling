@@ -1,3 +1,4 @@
 streamlit
-google-generativeai
-pandasstreamlit run app.py
+google-genai
+pandas
+supabase
