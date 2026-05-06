@@ -15,9 +15,9 @@ st.set_page_config(page_title="최신 뉴스 검색 및 저장 앱", page_icon="
 # 2. 비밀 키(Secrets) 불러오기 및 초기화
 # -------------------------------------------------------------------
 # Streamlit Cloud의 Secrets(또는 로컬의 .streamlit/secrets.toml)에서 키를 읽어옵니다.
-GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
-SUPABASE_URL = st.secrets["SUPABASE_URL"]
-SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
+GEMINI_API_KEY = st.secrets["AIzaSyAvgj7MTcqRl1xity-fWmkcD4DwPa-y3EM"]
+SUPABASE_URL = st.secrets["https://pdqfishityjutgvrbntr.supabase.co"]
+SUPABASE_KEY = st.secrets["sb_publishable_ibxSQO1gqAGlbbktRX1_Sw_6hZ_rqzt"]
 
 # Supabase 클라이언트 연결
 @st.cache_resource # 데이터베이스 연결을 매번 하지 않고 캐싱(저장)해두어 속도를 높입니다.
